@@ -44,6 +44,7 @@ header{
     height: 85px;
     background-color:#f5f8fa;
     border-bottom:solid 1px #425b76;
+    /* position: fixed; */
 }
 
 .header-left{
@@ -141,3 +142,56 @@ li > a{
 }
 
 /*** DIVISORE HEADER-MAIN FINE ***/
+
+/***MAIN PRIMA SEZIONE INIZIO***/  /*There's-a-better*/
+
+.primasezione{
+    height: 800px;
+    /* background-color: red; */
+    background-image: url("https://www.hubspot.com/hubfs/raw_assets/public/_Web%20Team%20Assets/Website/assets/svg/hero.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-bottom: solid 3px gray;
+}
+
+.testo-a-sinistra{
+    width: 35%;
+    padding-top: 12%;
+}
+
+h1{
+    font-size: 50px;
+    color: #425b76;
+    font-family: Arial;
+    font-style:Sans-serif;
+    display: inline;
+}
+
+.testo-a-sinistra>p{
+    padding-top: 5%;
+    font-size: 20px;
+    color: #425b76;
+    font-family: Arial;
+    font-style:Sans-serif;
+    word-spacing: 3px;
+}
+
+#button1{
+    margin: 0;
+    margin-top: 25px;
+    padding: 27px 35px;
+    font-size: 15px;
+}
+
+.pulsante{
+    /* background-color: red; */
+    width: 53%;
+}
+p:nth-child(2){
+    padding-top: 5%;
+    font-size: 15px;
+    color: #425b76;
+    font-family: Arial;
+    font-style:Sans-serif;
+    word-spacing: 3px;
+}
