@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: auto;
+    background-color: red;
+    width: 80%;
+    height: 100%;
+}
+
+header{
+    height: 80px;
+    background-color:#f5f8fa;
+    border-bottom:solid 1px #425b76;
+}
