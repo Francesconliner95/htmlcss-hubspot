@@ -1,4 +1,5 @@
 /*** GENERALI ***/
+
 *{
     margin: 0;
     padding: 0;
@@ -72,3 +73,48 @@ header{
     color: #ff7a59;
     border: 1px solid #ff7a59;
 }
+
+/***HEADER FINE***/
+
+/***NAV INIZIO***/
+
+nav{
+    height: 80px;
+    border-bottom:solid 1px #425b76;
+}
+
+.menu{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-100%, -50%);
+}
+
+#logo{
+    height: 65%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-10%, -50%);
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: #425b76;
+    font-family: Arial;
+    font-style:Sans-serif;
+    padding-left: 25px;
+    padding-top: 100%;
+    padding-bottom: 100%;
+
+}
+
+/***NAV FINE***/
