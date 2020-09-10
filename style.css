@@ -41,7 +41,7 @@ span{
 /*** HEADER INIZIO***/
 
 header{
-    height: 80px;
+    height: 85px;
     background-color:#f5f8fa;
     border-bottom:solid 1px #425b76;
 }
@@ -79,7 +79,7 @@ header{
 /***NAV INIZIO***/
 
 nav{
-    height: 80px;
+    height: 85px;
     border-bottom:solid 1px #425b76;
 }
 
@@ -106,7 +106,7 @@ li{
     display: inline-block;
 }
 
-a{
+li > a{
     text-decoration: none;
     color: #425b76;
     font-family: Arial;
@@ -118,3 +118,26 @@ a{
 }
 
 /***NAV FINE***/
+
+/***DIVISORE HEADER-MAIN INIZIO***/
+
+.divisore-header{
+    background-color: #425b76;
+    height: 85px;
+}
+
+#divisore{
+    color: white;
+    font-family: Arial;
+    font-style:Sans-serif;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    line-height: 150%;
+}
+
+#divisore > a{
+    color: white;
+}
+
+/*** DIVISORE HEADER-MAIN FINE ***/
