@@ -37,7 +37,7 @@ span{
     font-weight: lighter;
 }
 
-.stiletestoblue{
+.stiletesto{
     color: #425b76;
     /* font-family: Arial;
     font-style:Sans-serif; */
@@ -267,4 +267,70 @@ h4{
     padding: .7em;
     font-size: 15px;
     margin-top: 2em;
+}
+
+/***MAIN SECONDA SEZIONE FINE***/  /*Powerful alone.Better together.*/
+
+/***MAIN TERZA SEZIONE INIZIO***/  /*Learn and grow with...*/
+
+.terza-sezione{
+    background-color: #01afb4;
+    width: 100%;
+    /* height: 1000px; */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.sopra{
+    width: 70%;
+    margin: auto;
+    padding-top: 7em;
+}
+.sopra>h3{
+    color: white;
+    font-size: 30px;
+    font-family: arial;
+    text-align: center;
+}
+
+.sopra>p{
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    padding-bottom: 5em;
+}
+
+.sotto{
+    margin-bottom: 100px;
+    content: "";
+    display: table;
+    clear: both;
+}
+.quadrato{
+    /* width: calc(25% - 24px); */
+    height: 200px;
+    width: 25%;
+    background-color: #01afb4;
+    display: inline-block;
+    float: left;
+    border-right: solid 1px white;
+    border-bottom: solid 1px white;
+    padding: 15px;
+    text-align: center;
+}
+
+.quadrato:nth-child(4n+4) {
+  border-right: none;
+}
+
+.quadrato:nth-child(1n+5) {
+  border-bottom: none;
+}
+.quadrato>p:first-of-type{
+    font-size:50px;
+    font-family: arial black;
+}
+.quadrato p{
+    color: white;
 }
