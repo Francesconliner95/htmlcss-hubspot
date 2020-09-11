@@ -24,7 +24,7 @@ button{
     text-decoration: none;
     font-size: 10px;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 button:hover{
@@ -33,9 +33,16 @@ button:hover{
 
 span{
     color: #425b76;
-    font-family: Arial;
-    font-style:Sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
     font-weight: lighter;
+}
+
+.stiletestoblue{
+    color: #425b76;
+    /* font-family: Arial;
+    font-style:Sans-serif; */
+    font-family: 'Kumbh Sans', sans-serif;
+    line-height: 150%;
 }
 
 /*** HEADER INIZIO***/
@@ -44,13 +51,15 @@ header{
     height: 85px;
     background-color:#f5f8fa;
     border-bottom:solid 1px #425b76;
-    /* position: fixed; */
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .header-left{
-    position: absolute;
-    top: 50%;
-    transform: translate(0%, -50%);
+    float: left;
+    padding-top: 30px;
+    display: inline-block;
 }
 
 .lingua{
@@ -61,12 +70,9 @@ header{
 
 .header-right{
     /* background-color: blue; */
-    position: absolute;
-    width: 260px;
-    top: 50%;
-    left: 100%;
-    transform: translate(-100%, -50%);
-    box-sizing: border-box;
+    float: right;
+    padding-top: 15px;
+    display: inline-block;
 }
 
 .white-button{
@@ -80,38 +86,37 @@ header{
 /***NAV INIZIO***/
 
 nav{
-    height: 85px;
+    height: 170px;
     border-bottom:solid 1px #425b76;
+    padding-top: 85px;
 }
 
 .menu{
     width: 50%;
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translate(-100%, -50%);
+    float: right;
+    padding-top: 2em; /*due volte le dimensioni del font*/
 }
 
 #logo{
-    height: 65%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-10%, -50%);
+    height: 80%;
+    float: left;
+    display: inline-block;
+    padding-top: 1em;
+    margin-left: -1em; /*anche se illegale è l'unica soluzione che conosco l'immagine stessa ha il bordo:) */
 }
 
 ul{
     list-style-type: none;
 }
 
-li{
+.menu li{
     display: inline-block;
 }
 
 li > a{
     text-decoration: none;
     color: #425b76;
-    font-family: Arial;
-    font-style:Sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
     padding-left: 25px;
     padding-top: 100%;
     padding-bottom: 100%;
@@ -124,16 +129,15 @@ li > a{
 
 .divisore-header{
     background-color: #425b76;
-    height: 85px;
+    display: inline-block;
+    width: 100%;
 }
 
 #divisore{
     color: white;
-    font-family: Arial;
-    font-style:Sans-serif;
-    position: relative;
-    top: 50%;
-    transform: translate(0, -50%);
+    font-family: 'Kumbh Sans', sans-serif;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
     line-height: 150%;
 }
 
@@ -161,18 +165,12 @@ li > a{
 
 h1{
     font-size: 50px;
-    color: #425b76;
-    font-family: Arial;
-    font-style:Sans-serif;
     display: inline;
 }
 
 .testo-a-sinistra>p{
     padding-top: 5%;
     font-size: 20px;
-    color: #425b76;
-    font-family: Arial;
-    font-style:Sans-serif;
     word-spacing: 3px;
 }
 
@@ -190,15 +188,12 @@ h1{
 p:nth-child(2){
     padding-top: 5%;
     font-size: 15px;
-    color: #425b76;
-    font-family: Arial;
-    font-style:Sans-serif;
     word-spacing: 3px;
 }
 
 /***MAIN PRIMA SEZIONE FINE***/  /*There's-a-better*/
 
-/***MAIN SECONDA SEZIONE FINE***/  /*Powerful alone.Better together.*/
+/***MAIN SECONDA SEZIONE INIZIO***/  /*Powerful alone.Better together.*/
 
 .seconda-sezione{
     width: 100%;
@@ -215,6 +210,8 @@ p:nth-child(2){
 #intro{
     box-shadow: none;
     background-color: #f5f8fa;
+    transform: none; /*non esegue l'animazione in hover*/
+    padding-left: 0;
 }
 
 .riquadro{
@@ -226,17 +223,48 @@ p:nth-child(2){
     margin: 12px;
     box-shadow: 0px 0px 9px 1px rgba(105,98,105,0.1);
     border-radius: 5px;
+    padding:2em;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 h2{
     font-size: 35px;
-    color: #425b76;
-    font-family: Arial;
-    font-style:Sans-serif;
     display: inline;
 }
 
 #stileparagrafo{
     font-size: 17px;
-    line-height: 150%;
+}
+
+.riquadro:hover {
+    transition: all .5s ease-in-out;
+    transform: scale(1.02);
+ }
+
+h4{
+    display: inline-block;
+    font-size: 25px;
+    padding-bottom: 1.2em;
+}
+
+.sezione-superiore{
+    padding-bottom: 1.2em;
+    border-bottom: solid 2px rgba(100,100,100,.5);
+    margin-bottom: 1em;
+}
+
+.sezione-inferiore li{
+    padding-top: .7em;
+}
+
+.sezione-inferiore li::before{
+    content: url("img/check.png");
+}
+
+.button-list{
+    width: 100%;
+    padding: .7em;
+    font-size: 15px;
+    margin-top: 2em;
 }
