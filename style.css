@@ -162,6 +162,21 @@ ul{
 
 }
 
+#search-bar{
+  width: 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: none;
+  font-size: 16px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+#search-bar:focus {
+  width: 35%;
+  border: solid 2px #2cb3c8;
+  border-radius: 4px;
+}
 /***NAV FINE***/
 
 /***DIVISORE HEADER-MAIN INIZIO***/
