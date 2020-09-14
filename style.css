@@ -106,6 +106,26 @@ header{
     display: block;
 }
 
+#search-bar{
+  width: 20px;
+  border: none;
+  border-radius: none;
+  font-size: 16px;
+  /* padding: 2px; */
+  background-image: url('img/searchicon.png');
+  background-size: 17px;
+  background-repeat: no-repeat;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+#search-bar:focus {
+  width: 35%;
+  border: solid 5px #2cb3c8;
+  border-radius: 4px;
+}
+
+
 /***HEADER FINE***/
 
 /***NAV INIZIO***/
@@ -162,21 +182,6 @@ ul{
 
 }
 
-#search-bar{
-  width: 20px;
-  box-sizing: border-box;
-  border: none;
-  border-radius: none;
-  font-size: 16px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-}
-
-#search-bar:focus {
-  width: 35%;
-  border: solid 2px #2cb3c8;
-  border-radius: 4px;
-}
 /***NAV FINE***/
 
 /***DIVISORE HEADER-MAIN INIZIO***/
@@ -652,4 +657,8 @@ footer a:hover{
 
 #chat:hover{
     box-shadow: 0px 0px 100px 20px rgba(0,0,0,0.75);
+}
+
+.chat-section>button{
+    padding: 0;
 }
