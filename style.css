@@ -118,23 +118,30 @@ nav{
     content: "";
     display: table;
     clear: both;
-    padding-bottom: 40px;
+    padding-bottom: 35px;
     position: relative;
 }
 
 .menu{
     width: 50%;
-    float: right;
+    float: left;
     padding-top: 2em; /*due volte le dimensioni del font*/
+    display: inline-block;
 }
-
-#logo{
-    width: 10%;
+.logo{
+    width: 50%;
+    height: 50px; /*altezza simbolica per dare spessore al blocco*/
     float: left;
     display: inline-block;
+    position: relative;
+}
+#logo{
+    width: 25%;
+    /* float: left; */
+    /* display: inline-block; */
     position: absolute;
-    left: 125px;
-    padding-top: 1em;
+    right: 420px;
+    padding-top: .8em;
 }
 
 ul{
@@ -287,12 +294,19 @@ h4{
     margin-bottom: 1em;
 }
 
+.sezione-inferiore {
+    position: relative;
+}
+
 .sezione-inferiore li{
     padding-top: .7em;
+    padding-left: 30px;
 }
 
 .sezione-inferiore li::before{
     content: url("img/check.png");
+    position: absolute;
+    left: 0;
 }
 
 .button-list{
@@ -558,6 +572,14 @@ li>button{
     font-size: 1.1em;
     margin: 1em;
     color: #cbd6e2;
+}
+
+.elenco-nascosto{
+    display: none;
+}
+
+#altro:focus + .elenco-nascosto{
+    display: block;
 }
 
 .footer-down{
