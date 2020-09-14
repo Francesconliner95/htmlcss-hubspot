@@ -47,24 +47,27 @@ span{
 /*** HEADER INIZIO***/
 
 header{
-    height: 85px;
     background-color:#f5f8fa;
     border-bottom:solid 1px #425b76;
     position: fixed;
     width: 100%;
     z-index: 1;
+    /* padding-bottom: 15px; */
 }
 
 .header-left{
     float: left;
     padding-top: 30px;
     display: inline-block;
+    width: 50%;
+    /* background-color: blue; */
 }
 
 .lingua{
-    border-right:solid 2px #425b76;
     display: inline-block;
-    padding-right: 5px;
+    padding-right: 15px;
+    padding-bottom: 35px;
+    /* background-color: yellow; */
 }
 
 .header-right{
@@ -72,6 +75,8 @@ header{
     float: right;
     padding-top: 15px;
     display: inline-block;
+    width: 50%;
+    text-align: right;
 }
 
 .white-button{
@@ -80,14 +85,41 @@ header{
     border: 1px solid #ff7a59;
 }
 
+.menu-lingua{
+    width: 100px;
+    height: 200px;
+    background-color: white;
+    border: solid 1px rgba(0,0,200,.5);
+    position: absolute;
+    top: 70px;
+    padding-top: 10px;
+    padding-left: 12px;
+    line-height: 30px;
+    display: none;
+}
+
+.lingua:hover .menu-lingua{
+  display: block;
+}
+
+.menu-lingua:hover{
+    display: block;
+}
+
 /***HEADER FINE***/
 
 /***NAV INIZIO***/
 
 nav{
-    height: 170px;
+    /* height: 170px; */
     border-bottom:solid 1px #425b76;
     padding-top: 85px;
+    width: 100%;
+    content: "";
+    display: table;
+    clear: both;
+    padding-bottom: 40px;
+    position: relative;
 }
 
 .menu{
@@ -97,11 +129,12 @@ nav{
 }
 
 #logo{
-    height: 80%;
+    width: 10%;
     float: left;
     display: inline-block;
+    position: absolute;
+    left: 125px;
     padding-top: 1em;
-    margin-left: -1em; /*anche se illegale è l'unica soluzione che conosco l'immagine stessa ha il bordo:) */
 }
 
 ul{
@@ -464,15 +497,16 @@ footer{
 .footer-up1{
     width: 100%;
 }
+
 .rettangolo{
     float: left;
     display: inline-block;
     margin: 0;
     padding-top: 3.3em;
+    padding-bottom: 50px;
     width: 25%;
     /* background-color: red; */
     /* border: solid 2px; */
-    height: 450px;
 }
 
 .rettangolo a{
@@ -513,6 +547,7 @@ li>button{
     width: 100%;
     /* background-color: yellow; */
     text-align: center;
+    margin-top: 100px;
     padding-bottom: 35px;
 }
 
@@ -526,6 +561,7 @@ li>button{
 }
 
 .footer-down{
+    width: 100%;
     padding-top: 30px;
     padding-bottom: 120px;
 }
@@ -533,11 +569,14 @@ li>button{
 .footer-left{
     float: left;
     width: 50%;
+    display: inline-block;
 }
 
 .footer-right{
     float: left;
     width: 50%;
+    display: inline-block;
+    text-align: right;
 }
 
 .footer-left>p{
@@ -549,9 +588,7 @@ li>button{
 .footer-right>a{
     text-decoration: none;
     color: #cbd6e2;
-    position: relative;
-    left: 250px;
-    top: 15px;
+    text-align: right;
     font-size: 18px;
 }
 
